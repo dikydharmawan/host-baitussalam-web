@@ -1,0 +1,1805 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    font-family: poppins, sans-serif;
+}
+
+
+/* css profile */
+
+.herosectionProfile {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("/assets/images/gambarMasjid.png");
+    background-size: cover;
+    background-position: center;
+    box-shadow: none;
+    background-repeat: no-repeat;
+    height: 60vh;
+    font-size: 38px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.fc-event,
+.fc-daygrid-event {
+    pointer-events: none !important;
+}
+
+.gallery-card {
+    border: 1px dashed #ddd;
+    border-radius: 12px;
+    padding: 8px;
+    text-align: center;
+    height: 100%;
+}
+
+.gallery-img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 6px;
+}
+
+.gallery-add {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+}
+
+.gallery-plus {
+    font-size: 48px;
+    color: #198754;
+}
+
+.herosectionProfile .deskripsiHero {
+    font-weight: lighter;
+    font-size: 20px;
+    color: #000;
+}
+
+a.nav-link:hover {
+    background-color: rgb(232, 230, 230);
+    border-radius: 8px;
+}
+
+#navbar {
+    position: relative;
+}
+
+.navbar-collapse {
+    transition: all 0.35s ease;
+}
+
+
+/* Footer */
+
+.containerFooter {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0 80px;
+    position: relative;
+}
+
+.footerDisclaimerContainer {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.footerDisclaimerContainer .footerCopyright {
+    width: 50%;
+}
+
+.footerDisclaimerContainer .footerSosialContainer {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.footerDisclaimerContainer .footerSosialContainer .footerSosial {
+    display: flex;
+    align-items: end;
+    height: 15vh;
+}
+
+.footerSosial a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+    margin-left: 10px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    color: #000;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footerSosial a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    transform: translateY(-4px);
+}
+
+.footerSosial a i {
+    color: black;
+    font-size: 25px;
+}
+
+.footerLogoContainer {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #6f6e6e;
+}
+
+.footerDisclaimerContainer {
+    height: 20vh;
+    padding-top: 3px;
+}
+
+.profileSejarah span {
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+}
+
+.profileSejarah p {
+    display: flex;
+    text-align: justify;
+}
+
+.profileContent {
+    padding: 40px 80px;
+}
+
+.profileVisiMisi {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.visi {
+    height: 203px;
+    border-top: 4px solid #81C784;
+    border-radius: 20px;
+    padding: 30px 100px;
+    box-shadow: 10px 7px 5px 0px rgba(217, 217, 217, 0.91);
+    -webkit-box-shadow: 10px 7px 5px 0px rgba(217, 217, 217, 0.91);
+    -moz-box-shadow: 10px 7px 5px 0px rgba(217, 217, 217, 0.91);
+}
+
+.misi {
+    padding: 30px 100px;
+    height: 203px;
+    border-top: 4px solid #81C784;
+    border-radius: 20px;
+    box-shadow: 10px 7px 5px 0px rgba(217, 217, 217, 0.91);
+    -webkit-box-shadow: 10px 7px 5px 0px rgba(217, 217, 217, 0.91);
+    -moz-box-shadow: 10px 7px 5px 0px rgba(217, 217, 217, 0.91);
+}
+
+.visi span {
+    font-weight: bold;
+}
+
+.misi span {
+    font-weight: bold;
+}
+
+.profileMap {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0;
+}
+
+.profileMap span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.profileMap iframe {
+    border-radius: 20px;
+    width: 100%;
+}
+
+
+/* css beranda */
+
+.herosectionBeranda {
+    background-image: linear-gradient(rgba(181, 181, 181, 0.45), rgba(181, 181, 181, 0.45)), url("/assets/images/background2.png");
+    background-size: cover;
+    background-position: center;
+    box-shadow: none;
+    background-repeat: no-repeat;
+    height: 60vh;
+    font-size: 70px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.herosectionBeranda .titleHero {
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.feature-card {
+    background: #eef8f2;
+    border-radius: 24px;
+    padding: 32px 20px;
+    border: 1px solid #222;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.feature-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.icon-box {
+    width: 56px;
+    height: 56px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-box i {
+    font-size: 26px;
+    color: #000;
+}
+
+.tentangBerandaContainer {
+    padding: 50px;
+}
+
+.tentangBerandaContainer .container .row .col-lg-6 a.btn {
+    display: none;
+}
+
+.cardKegiatanContainer div.container {
+    padding: 30px 0;
+    border-bottom: 1px solid rgb(80, 80, 80);
+}
+
+.herosectionOrganisasi {
+    background-image: linear-gradient(rgba(118, 118, 118, 0.45), rgba(118, 118, 118, 0.45)), url("/assets/images/gambarMasjid.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+    min-height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: black;
+}
+
+.hero-card-wrapper {
+    margin-top: -80px;
+    position: relative;
+    z-index: 10;
+}
+
+.cardItemsOrganisasi {
+    transition: all 0.3s ease;
+}
+
+.cardItemsOrganisasi:hover {
+    cursor: pointer;
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.cardGaleri {
+    border-radius: 14px;
+    overflow: hidden;
+    width: 100%;
+    height: 200px;
+    border-radius: 18px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+}
+
+.cardGaleri img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .4s ease;
+    object-position: center;
+    display: block;
+}
+
+.cardGaleri:hover img {
+    transform: scale(1.08);
+}
+
+.kontakInputForm {
+    border-radius: 14px;
+    padding: 12px 14px;
+}
+
+.kontakForm label {
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.kontakForm input {
+    box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.kontakForm textarea {
+    box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.map-box {
+    background: #fff;
+}
+
+.map-title {
+    background: #f8f9fa;
+    font-size: 0.95rem;
+}
+
+.info-box {
+    background: #fff;
+    padding: 18px;
+    border-radius: 16px;
+    box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.kontakForm button {
+    background-color: #388E3C;
+}
+
+.kontakForm button:hover {
+    background-color: #1f6123;
+    color: white;
+}
+
+.zakat-card {
+    background: #eef7ef;
+    border-radius: 16px;
+}
+
+.zakat-card i {
+    color: #2f7d32;
+}
+
+.zakatInformasi {
+    border-color: #e5e7eb !important;
+}
+
+.zakatInformasi a {
+    background-color: #388E3C;
+}
+
+.zakatInformasi a:hover {
+    background-color: #1f6123;
+    color: white;
+}
+
+.btn-success,
+.bg-success {
+    background-color: #388E3C !important;
+}
+
+.tabsLiterasi {
+    background-color: #C8E6C9;
+    width: 475px;
+    display: flex;
+    justify-content: center;
+    padding: 5px 0;
+    border-radius: 10px;
+}
+
+.tabsLiterasi .nav-item a{
+    color: black;
+}
+
+.tabsLiterasi .nav-item a:hover{
+    background-color: #388E3C;
+    color: white;
+}
+
+.downloadLiterasi .cardHeaderLiterasi {
+    background-color: #A5D6A7;
+}
+
+.card .cardHeaderPeminjaman {
+    background-color: #A6E2A9;
+    color: black;
+}
+
+.buttonPeminjaman {
+    display: flex;
+    justify-content: end;
+}
+
+.badgeKegiatan {
+    font-size: 11px;
+    padding: 6px 10px;
+}
+
+.cardKegiatan {
+    transition: .2s;
+}
+
+.cardKegiatan:hover {
+    transform: translateY(-3px);
+}
+
+div#fiterKegiatan div.fiterKegiatanMenu {
+    background-color: #C8E6C9;
+    gap: 10px;
+}
+
+div#fiterKegiatan div.fiterKegiatanMenu a:hover {
+    background-color: #619A90;
+}
+
+.cardKegiatan div div span.temaKegiatan {
+    background-color: #81C784;
+    color: black;
+}
+
+.cardKegiatan div div span.statusKegiatan {
+    background-color: #619A90;
+    color: black;
+}
+
+.cardKegiatan div div a.detailButtonKegiatan {
+    color: white;
+    background-color: #388E3C;
+    border: none;
+}
+
+.cardKegiatan div div a.detailButtonKegiatan:hover {
+    color: white;
+    background-color: #246728;
+}
+
+div.cardHeroDonasi div img.heroImgDonasi {
+    max-height: 220px;
+    object-fit: cover;
+}
+
+div.cardQris {
+    box-shadow: 0px 4px 4px 0px rgba(111, 97, 92, 1);
+}
+
+div.cardQris div div div img.qrisImgDonasi {
+    max-width: 180px;
+}
+
+div.cardQris div div div a.btnDownloadQris {
+    background-color: #388E3C;
+    color: white;
+    border: none;
+}
+
+div.cardBank {
+    box-shadow: 0px 4px 4px 0px rgba(111, 97, 92, 1);
+}
+
+div.cardBank div button.btnCopyDonasi {
+    background-color: #388E3C;
+    color: white;
+    border: none;
+}
+
+.doc-card {
+    position: relative;
+    display: flex;
+    gap: 16px;
+    padding: 20px;
+    padding-right: 50px;
+    background: #fff;
+    border-radius: 14px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .08);
+    height: 100%;
+}
+
+.doc-icon {
+    font-size: 34px;
+    color: #000;
+}
+
+.doc-card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 0;
+}
+
+.doc-action {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    width: 32px;
+    height: 32px;
+    background: #a5d6a7;
+    color: #1b5e20;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.doc-action:hover {
+    background: #81c784;
+}
+
+button.btnDokumen {
+    border-radius: 15px;
+    background-color: #388E3C;
+    color: white;
+    font-size: 15px;
+}
+
+.calendar-box {
+    border-radius: 16px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    background: #fff;
+}
+
+.agenda-box {
+    border-radius: 16px;
+    border: 1px solid #ddd;
+    background: #fff;
+}
+
+.agenda-card {
+    border: 1px solid #ddd;
+    border-radius: 14px;
+    padding: 16px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .08);
+}
+
+.bg-success-subtle {
+    background: #c8e6c9;
+}
+
+.profile-card-remaja {
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .06);
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+}
+
+.profile-card-remaja img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-bottom: 12px;
+}
+
+.gallery-img-remaja {
+    border-radius: 16px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.herosectionRemaja,
+.herosectionIbu,
+.herosectionBapak {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("/assets/images/gambarMasjid.png");
+    background-size: cover;
+    background-position: center;
+    box-shadow: none;
+    background-repeat: no-repeat;
+    height: 60vh;
+    font-size: 38px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery-card img {
+    height: 160px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.gallery-card p {
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.section-divider {
+    border-top: 1px solid #e5e5e5;
+    margin: 24px 0;
+}
+
+
+/* Accordion style */
+
+#imarahAccordion .accordion-button,
+#idarohAccordion .accordion-button {
+    background-color: #d8f0d8;
+    font-weight: 600;
+    color: #1f4f2f;
+}
+
+#imarahAccordion .accordion-button:not(.collapsed),
+#idarohAccordion .accordion-button:not(.collapsed) {
+    background-color: #cceacb;
+    box-shadow: none;
+}
+
+#imarahAccordion .accordion-button:focus,
+#idarohAccordion .accordion-button:focus {
+    box-shadow: none;
+}
+
+#imarahAccordion .accordion-item,
+#idarohAccordion .accordion-item {
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #c6e3c6;
+}
+
+.laporanKeuanganContainer .table thead th {
+    font-weight: 600;
+    background-color: #fff;
+}
+
+.laporanKeuanganContainer .search-box {
+    max-width: 260px;
+    border-radius: 10px;
+}
+
+.laporanKeuanganContainer .rounded-card {
+    border-radius: 14px;
+}
+
+.laporanKeuanganContainer .form-select {
+    border-radius: 10px;
+}
+
+.statuslaporan {
+    background-color: #28a745;
+}
+
+.uploadboxcontainer .upload-box {
+    border: 2px dashed #dcdcdc;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    background: #fff;
+}
+
+.uploadboxcontainer .upload-icon {
+    font-size: 48px;
+    color: #2e7d32;
+}
+
+.uploadboxcontainer .btn-upload {
+    background-color: #2e7d32;
+    color: #fff;
+}
+
+.uploadboxcontainer .btn-upload:hover {
+    background-color: #256428;
+}
+
+.adartcontainer .info-box {
+    background-color: #cfead1;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.adartcontainer .note-box {
+    background-color: #eef7ee;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 14px;
+}
+
+.adartcontainer .btn-download {
+    background-color: #2e7d32;
+    color: #fff;
+}
+
+.adartcontainer .btn-download:hover {
+    background-color: #256428;
+}
+
+.event-img {
+    border-radius: 12px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.info-card i {
+    width: 22px;
+}
+
+.badge-soft {
+    background: #7ac380;
+    color: #2e7d32;
+}
+
+.shadow-soft {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .08);
+}
+
+.shadow-soft {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .08);
+}
+
+.preview-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#signInContainer .btn-signin {
+    background: #fff;
+    border: 1.5px solid #000;
+    border-radius: 50px;
+    padding: 10px 18px;
+    transition: .2s ease;
+}
+
+#signInContainer .btn-signin:hover {
+    background: #f5f5f5;
+}
+
+#signInContainer .btn-signin .icon-circle {
+    width: 28px;
+    height: 28px;
+    border: 1.5px solid #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+#forgotPasswordModal .modal-content {
+    max-width: 450px;
+    margin: auto;
+}
+
+#forgotPasswordModal .input-group-text i {
+    font-size: 1.2rem;
+}
+
+#forgotPasswordModal .btn-success {
+    background-color: #3a8f3a;
+    border: none;
+}
+
+#forgotPasswordModal .btn-success:hover {
+    background-color: #2f7a2f;
+}
+
+.container div.cardEditJadwal form div.row .col-12 button {
+    font-weight: normal;
+}
+
+.container div.cardEditJadwal form div.row .col-12 button.btnJadwalBatal {
+    color: black;
+    font-weight: normal;
+}
+
+.deskripsiOrganisasi{
+    text-align: justify;
+}
+
+
+/* Responsive */
+
+@media (min-width: 992px) {
+    #navbarNavDropdown {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #searchBarDesktop {
+        display: block;
+    }
+    .searchBarMobile {
+        display: none;
+    }
+    .navbarTop {
+        display: none;
+    }
+    .nav-icon {
+        display: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .searchBarMobile {
+        display: none;
+    }
+    #searchBarDesktop {
+        display: none
+    }
+    .fotoProfileContainer {
+        margin-left: auto;
+    }
+    .navbar-brand img {
+        width: 60px;
+        height: 48px;
+    }
+    .navbar1 {
+        display: none;
+    }
+    .navbarTop {
+        display: block;
+    }
+    #navbar .navbar-collapse.show {
+        position: fixed;
+        inset: 0;
+        background: linear-gradient(180deg, #e4f5ee, #d6efe6);
+        padding: 4rem 1.5rem 2rem;
+        z-index: 9999;
+        overflow-y: auto;
+    }
+    #navbar .navbar-nav {
+        flex-direction: column;
+        gap: 0.4rem;
+    }
+    #navbar .nav-link {
+        font-size: 1rem;
+        padding: 0.75rem 1rem;
+        border-radius: 12px;
+        color: #1f2937;
+        transition: background 0.25s ease;
+    }
+    #navbar .nav-link:hover,
+    #navbar .nav-link.active {
+        background: rgba(0, 0, 0, 0.05);
+    }
+    .dropdown-menu {
+        position: static;
+        float: none;
+        border: none;
+        background: transparent;
+        padding-left: 1rem;
+    }
+    .dropdown-item {
+        border-radius: 10px;
+        padding: 0.6rem 1rem;
+    }
+    .dropdown-item:hover {
+        background: rgba(0, 0, 0, 0.05);
+    }
+    .searchBarMobile {
+        width: 100%;
+    }
+    .navbar-toggler {
+        z-index: 10000;
+        border: none;
+    }
+    #navbar .mobile-drawer {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 78%;
+        height: 100vh;
+        background: #e7f6ee;
+        padding: 1.5rem 1.2rem;
+        z-index: 9999;
+        transition: left 0.35s ease;
+        border-top-right-radius: 24px;
+        border-bottom-right-radius: 24px;
+    }
+    #navbar .mobile-drawer.show {
+        left: 0;
+    }
+    .drawer-close {
+        position: absolute;
+        top: 16px;
+        left: 16px;
+    }
+    #navbar .navbar-nav {
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+    #navbar .nav-link {
+        font-size: 1rem;
+        padding: 0.75rem 1rem;
+        border-radius: 14px;
+        color: #14532d;
+        transition: background 0.25s ease;
+    }
+    #navbar .nav-link:hover {
+        background: rgba(0, 0, 0, 0.06);
+    }
+    .nav-icon {
+        font-size: 1.2rem;
+        color: #22c55e;
+    }
+    .dropdown-menu {
+        background: transparent;
+        border: none;
+        padding-left: 2rem;
+    }
+    .dropdown-item {
+        padding: 0.6rem 0.8rem;
+        border-radius: 10px;
+    }
+    .navbar-toggler {
+        border: none;
+        z-index: 10000;
+    }
+    .navbar-toggler {
+        transition: opacity 0.2s ease;
+    }
+    .navbar-toggler[aria-expanded="true"] {
+        opacity: 0;
+        pointer-events: none;
+    }
+    .containerFooter {
+        height: auto;
+        padding: 0 20px;
+    }
+    .footerDisclaimerContainer {
+        display: flex;
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    .footerLogoContainer {
+        border-bottom: none;
+    }
+    .footerDisclaimerContainer .footerSosialContainer {
+        display: flex;
+        justify-content: center;
+        height: auto;
+        width: 100%;
+        border-bottom: 2px solid #6f6e6e;
+    }
+    .footerDisclaimerContainer .footerSosialContainer .footerSosial {
+        display: flex;
+        height: auto;
+        align-items: start;
+    }
+    .footerDisclaimerContainer .footerCopyright {
+        font-size: 14px;
+    }
+    .herosectionProfile .ornamenGaris {
+        width: 60%
+    }
+    .herosectionOrganisasi {
+        height: 50vh;
+        font-size: 28px;
+    }
+    .hero-card-wrapper {
+        margin-top: -40px;
+    }
+    .herosectionBeranda {
+        height: 190px;
+        width: 90%;
+        margin-top: 20px;
+        justify-self: center;
+        border-radius: 10px;
+        background-size: cover;
+        position: relative;
+    }
+    .titleHero {
+        font-size: 18px;
+        font-weight: 700;
+        padding: 10px;
+        text-align: center;
+        position: absolute;
+        top: 200px;
+    }
+    /* ====================
+     FEATURE GRID (4 MENU)
+  ===================== */
+    .cardKegiatanContainer {
+        padding: 10px 40px;
+    }
+    .feature-card {
+        border-radius: 16px;
+        padding: 25px 5px;
+        height: 110px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, .08);
+    }
+    .feature-card a {
+        display: flex;
+        flex-direction: row;
+    }
+    .feature-card .icon-box {
+        margin-bottom: 6px;
+    }
+    .feature-card .icon-box i {
+        font-size: 22px;
+    }
+    .feature-card h5 {
+        font-size: 13px;
+        font-weight: 600;
+        margin: 4px 0;
+    }
+    .feature-card p {
+        font-size: 11px;
+        line-height: 1.2;
+        margin: 0;
+    }
+    /* ====================
+     TENTANG KAMI
+  ===================== */
+    .tentangBerandaContainer {
+        padding: 20px;
+    }
+    .tentangBerandaContainer .container .row .col-lg-6 a.btn {
+        display: block;
+        width: 50%;
+        font-size: small;
+    }
+    .tentangBerandaContainer .container .listberita::before {
+        content: "Kajian & Literasi";
+        display: block;
+        font-weight: bold;
+        width: 100%;
+        height: 1px;
+        background-color: #e0e0e0;
+        margin-bottom: 40px;
+    }
+    .tentangBerandaContainer .container .listberita .d-flex .d-flex {
+        background-color: #C8E6C9;
+        border-radius: 10px;
+    }
+    .tentangBerandaContainer .container .listberita .d-flex .d-flex p::after {
+        content: "➜";
+        color: black;
+        font-weight: bold;
+    }
+    /* ====================
+     GALERI
+  ===================== */
+
+  .galeriContainer .container {
+    padding: 24px;
+  }
+
+  .cardQris .card-body .row div {
+    position: relative;
+  }
+
+  .cardQris .card-body .row div a.btnDownloadQris {
+    position: absolute;
+    bottom: -250px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+
+div.cardQris{
+    height: 360px;
+}
+
+.shadow-soft div.d-flex{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: start;
+}
+.shadow-soft div.d-flex button{
+    width: 150px;
+    font-size: 10px;
+    font-weight: normal;
+    color: white;
+    box-shadow:
+  0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+.shadow-soft div.d-flex button.btnBatal{
+    width: 310px;
+    font-size: 10px;
+    font-weight: normal;
+    color: black;
+    box-shadow:
+  0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.shadow-soft div.col-md-6 .border{
+    box-shadow:
+  0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.container div.cardJadwal{
+    font-size: 13px;
+    
+}
+
+.container div.cardEditJadwal form div.row .col-12{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+.container div.cardEditJadwal form div.row .col-12 button {
+    width: 160px;
+    font-size: 10px;
+    font-weight: normal;
+    color: white;
+    box-shadow:
+  0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.container div.cardEditJadwal form div.row .col-12 button.btnJadwalBatal {
+    width: 340px;
+    font-size: 10px;
+    font-weight: normal;
+    color: black;
+    box-shadow:
+  0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.laporanKeuanganContainer div.d-flex a.btn{
+    font-size: 10px;
+    width: 130px;
+    display: flex;
+    justify-content: center;
+}
+
+.adartcontainer div.row div.card {
+    box-shadow:none;
+    border: none;
+}
+
+.adartcontainer .infoContainer {
+    
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.adartcontainer .card .card-body h5{
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.herosectionProfile {
+    height: 190px ;
+    width: 90%;
+    margin-top: 20px;
+    justify-self: center;
+    border-radius: 10px;
+    background-size: cover;
+    position: relative;
+}
+
+.herosectionProfile .titleHero {
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    top: 200px;
+}
+.herosectionProfile .deskripsiHero {
+    font-size: 12px;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    top: 220px;
+}
+
+.herosectionProfile .ornamenGaris{
+    font-size: 12px;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    top: 240px;
+}
+
+.profileContent {
+    padding-top: 80px;
+}
+
+.profileVisiMisi{
+    font-size: 12px;
+}
+
+.profileVisiMisi .visi, .misi{
+    height: auto;
+    padding: 20px 30px;
+}
+
+.profileSejarah p{
+    font-size: 12px;
+}
+/* =========================
+   ZAKAT & INFAQ - FIGMA MOBILE
+========================= */
+
+/* Background halaman */
+body {
+    background-color: #e3ebe6;
+}
+
+/* Container spacing */
+.container {
+    padding: 20px;
+}
+
+/* Heading */
+.container h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.container p.text-muted {
+    font-size: 12px;
+    margin-bottom: 18px;
+}
+
+/* =========================
+   CARD ZAKAT (HIJAU SOFT)
+========================= */
+
+.zakat-card {
+    background: #dfe8e2 !important;
+    border-radius: 16px;
+    padding: 16px !important;
+}
+
+.zakat-card i {
+    font-size: 22px !important;
+    color: #2e7d32;
+}
+
+.zakat-card h6 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.zakat-card p {
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+/* =========================
+   CARD KONFIRMASI
+========================= */
+
+.zakatInformasi {
+    background: #ffffff;
+    border: 1px solid #dcdcdc !important;
+    border-radius: 16px;
+    padding: 18px !important;
+}
+
+/* Judul tengah */
+.zakatInformasi h6 {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+/* List rekening */
+.zakatInformasi ul {
+    padding: 0;
+}
+
+.zakatInformasi ul li {
+    font-size: 13px;
+    padding: 10px 0;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.zakatInformasi ul li:last-child {
+    border-bottom: none;
+}
+
+/* QR Code */
+.zakatInformasi img {
+    display: block;
+    margin: 18px auto 12px auto;
+    max-width: 170px;
+}
+
+/* Layout jadi vertikal */
+.zakatInformasi .row {
+    flex-direction: column;
+}
+
+.zakatInformasi .col-md-8,
+.zakatInformasi .col-md-4 {
+    width: 100%;
+    text-align: center;
+}
+
+/* =========================
+   BUTTON HUBUNGI
+========================= */
+
+.zakatInformasi a.btn {
+    width: 100%;
+    background-color: #2e7d32 !important;
+    border-radius: 8px;
+    padding: 10px 0;
+    font-size: 13px;
+    font-weight: 500;
+    box-shadow: none;
+}
+
+/* =========================
+   KONTAK - FIGMA MOBILE
+
+/* Background halaman */
+body {
+    background-color: #e3ebe6;
+}
+
+/* Container spacing */
+.container {
+    padding: 20px;
+}
+
+/* =========================
+   FORM
+   KONTAK - MOBILE FIX
+
+.kontakForm {
+    padding: 0;
+}
+
+/* Label */
+.kontakForm label {
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+/* Input & Textarea */
+.kontakInputForm {
+    font-size: 13px;
+    padding: 12px 14px;
+    border-radius: 14px;
+    border: 1px solid #dcdcdc;
+    background: #f7f7f7;
+}
+
+.kontakInputForm:focus {
+    box-shadow: none;
+    border-color: #2e7d32;
+    background: #ffffff;
+}
+
+/* Button kirim */
+.kontakForm button {
+    width: 100%;
+    background-color: #2e7d32;
+    border-radius: 10px;
+    padding: 12px 0;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+}
+
+/* =========================
+   HUBUNGI KAMI BUTTON
+========================= */
+
+.hubungi-buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.hubungi-buttons a {
+    flex: 1;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/* Telepon */
+.btn-telepon {
+    background-color: #2e7d32;
+    color: #fff;
+}
+
+/* WhatsApp */
+.btn-wa {
+    background-color: #2e7d32;
+    color: #fff;
+}
+
+/* =========================
+   INFO EMAIL & ALAMAT
+========================= */
+
+.info-box {
+    background: #f7f7f7;
+    border: 1px solid #dcdcdc;
+    border-radius: 14px;
+    padding: 12px 14px;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+/* =========================
+   MAP
+========================= */
+
+.map-box {
+    margin-top: 12px;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.map-box img,
+.map-box iframe {
+    width: 100%;
+    border-radius: 16px;
+}
+
+/* Link Google Maps */
+.map-link {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 6px;
+    color: #2e7d32;
+}
+
+/* =========================
+   PEMINJAMAN - MOBILE FIX
+
+/* Background section */
+body {
+    background-color: #dfe8e2;
+}
+
+/* Container spacing */
+.container.my-4 {
+    padding: 20px;
+}
+
+/* Judul */
+.container h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.container p.text-muted {
+    font-size: 12px;
+    margin-bottom: 18px;
+}
+
+/* Gambar */
+.container img.img-fluid {
+    border-radius: 18px !important;
+    max-height: 220px;
+    object-fit: cover;
+    margin-bottom: 18px;
+}
+
+/* Card */
+.card {
+    border-radius: 16px !important;
+    box-shadow: none !important;
+    border: 1px solid #e5e5e5;
+}
+
+/* Header card hijau muda */
+.cardHeaderPeminjaman {
+    background-color: #c8e6c9 !important;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    padding: 10px;
+    border-radius: 16px 16px 0 0 !important;
+}
+
+/* Card body */
+.card .card-body {
+    padding: 14px 16px;
+}
+
+/* List jadi 2 kolom seperti figma */
+.card .card-body ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px 12px;
+}
+
+.card .card-body ul li {
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+/* Button container */
+.buttonPeminjaman {
+    justify-content: center;
+    margin-top: 10px;
+}
+
+/* Button WA sesuai figma */
+.buttonPeminjaman a.btn {
+    width: 100%;
+    background-color: #2e7d32 !important;
+    border-radius: 8px;
+    padding: 10px 0;
+    font-size: 13px;
+    font-weight: 500;
+    box-shadow: none;
+    font-size: 14px;
+    padding: 14px 0;
+    border-radius: 12px;
+}
+
+.herosectionIbu {
+    height: 190px ;
+    width: 90%;
+    margin-top: 20px;
+    justify-self: center;
+    border-radius: 10px;
+    background-size: cover;
+    position: relative;
+}
+
+.herosectionIbu .ornamenGaris{
+    font-size: 12px;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    top: 245px;
+    width: 50%;
+}
+
+.pengajianIbuContainer .container section.mb-5 {
+    padding-top: 60px;
+}
+
+}
+
+@media (max-width: 767px) {
+.zakat-card {
+    padding: 16px !important;
+}
+
+.zakatInformasi {
+    padding: 16px !important;
+}
+
+.zakatInformasi img {
+    max-width: 130px;
+}
+
+.kontakInputForm {
+    padding: 9px 11px;
+}
+
+.map-box iframe {
+    height: 220px;
+}
+
+.info-box {
+    padding: 12px;
+}
+
+.container img.img-fluid {
+    max-height: 220px;
+    object-fit: cover;
+}
+
+.card .card-body {
+    padding: 14px;
+}
+
+.buttonPeminjaman a.btn {
+    font-size: 13px;
+}
+
+.herosectionBapak {
+    height: 190px ;
+    width: 90%;
+    margin-top: 20px;
+    justify-self: center;
+    border-radius: 10px;
+    background-size: cover;
+    position: relative;
+}
+
+.herosectionBapak .ornamenGaris{
+    font-size: 12px;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    top: 245px;
+    width: 50%;
+}
+
+.herosectionRemaja {
+    height: 190px ;
+    width: 90%;
+    margin-top: 20px;
+    justify-self: center;
+    border-radius: 10px;
+    background-size: cover;
+    position: relative;
+}
+
+.herosectionRemaja .ornamenGaris{
+    font-size: 12px;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    top: 245px;
+    width: 50%;
+}
+
+
+
+
+}
+
+@media (max-width: 767px) {
+    .hero-card-wrapper {
+        margin-top: 0;
+        position: static;
+        z-index: auto;
+    }
+    .cardOrganisasi .row {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+    .cardOrganisasi .col-md-4 {
+        flex: 1 1 calc(33.33% - 12px);
+        max-width: calc(33.33% - 12px);
+    }
+    .cardOrganisasi .col-md-4 a div.card {
+        box-shadow: none;
+        border: 1px silver solid;
+    }
+    .cardItemsOrganisasi {
+        width: 100%;
+        padding: 12px;
+        font-size: 10px;
+    }
+
+    .cardGaleriContainer div.row{
+        padding: 10px 30px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .cardGaleriContainer div.row .col-md-3{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+  .carousel-inner .row {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start !important;
+  }
+
+  .carousel-inner .col-12 {
+    flex: 0 0 auto;
+    width: 160px; 
+  }
+
+  .profile-card-remaja {
+    padding: 10px;
+  }
+
+  .profile-card-remaja img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .carousel-inner .row::-webkit-scrollbar {
+    display: none;
+  }
+
+  .galeriAnnisa .row {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+
+  }
+
+  .galeriAnnisa .row > .col-md-4 {
+    flex: 0 0 auto;
+    width: 220px; 
+  }
+
+
+  .galeriAnnisa .row::-webkit-scrollbar {
+    display: none;
+  }
+
+  .galeriAnnisa .row {
+    scroll-behavior: smooth;
+  }
+
+.galeriBapak .row {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+
+  }
+
+  .galeriBapak .row > .col-md-4 {
+    flex: 0 0 auto;
+    width: 220px; 
+  }
+
+
+  .galeriBapak .row::-webkit-scrollbar {
+    display: none;
+  }
+
+  .galeriBapak .row {
+    scroll-behavior: smooth;
+  }
+
+  .galeriRemaja .row {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+
+  }
+
+  .galeriRemaja .row > .col-md-4 {
+    flex: 0 0 auto;
+    width: 220px; 
+  }
+
+
+  .galeriRemaja .row::-webkit-scrollbar {
+    display: none;
+  }
+
+  .galeriRemaja .row {
+    scroll-behavior: smooth;
+  }
+  
+
+
+
+}
+
+@media (max-width: 415px) {
+    .tabsLiterasi{
+        width: 100%;
+        font-size: 11px;
+    }
+
+    .literasiContainer div.row div.col-md-6 div.card div.card-body a{
+        font-size: 10px;
+        width: 50%;
+    }
+
+
+}
