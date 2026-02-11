@@ -1,14 +1,14 @@
 {
     "version": 2,
     "functions": {
-        "api/index.php": {
+        "api/vercel_index.php": {
             "runtime": "vercel-php@0.7.1",
             "includeFiles": "public/build/**"
         }
     },
     "routes": [
         { "src": "/(build|css|js|images|storage|favicon.ico)/(.*)", "dest": "/public/$1/$2" },
-        { "src": "/(.*)", "dest": "/api/index.php" }
+        { "src": "/(.*)", "dest": "/api/vercel_index.php" }
     ],
     "env": {
         "APP_ENV": "production",
