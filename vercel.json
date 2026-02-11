@@ -1,9 +1,8 @@
 {
-    "version": 2,
+    "version": 3,
     "functions": {
         "api/vercel_index.php": {
-            "runtime": "vercel-php@0.7.1",
-            "includeFiles": "public/build/**"
+            "runtime": "vercel-php@0.7.1"
         }
     },
     "routes": [
@@ -12,12 +11,13 @@
     ],
     "env": {
         "APP_ENV": "production",
-        "APP_DEBUG": "true",
+        "APP_DEBUG": "false",
         "VIEW_COMPILED_PATH": "/tmp",
         "SESSION_DRIVER": "cookie",
         "LOG_CHANNEL": "stderr",
         "APP_PACKAGES_CACHE": "/tmp/packages.php",
         "APP_SERVICES_CACHE": "/tmp/services.php",
-        "APP_KEY": "base64:edwg86EP0AF/tiTOnoHjA/6VVezDZRxOBqJlO+LXigU="
+        "APP_KEY": "base64:edwg86EP0AF/tiTOnoHjA/6VVezDZRxOBqJlO+LXigU=",
+        "APP_URL": "https://your-app.vercel.app"
     }
 }

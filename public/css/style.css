@@ -5,6 +5,29 @@
     box-sizing: border-box;
 }
 
+
+/* Global Logo Sizing */
+
+.logo-img {
+    width: 85px !important;
+    max-width: 85px !important;
+    height: auto !important;
+    object-fit: contain !important;
+    transition: width 0.3s ease;
+}
+
+@media (max-width: 991px) {
+    .logo-img {
+        width: 70px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .logo-img {
+        width: 55px !important;
+    }
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -1285,24 +1308,6 @@ button.btnDokumen {
     .container p.text-muted {
         font-size: 12px;
         margin-bottom: 18px;
-    }
-    /* Global Logo Sizing */
-    .logo-img {
-        width: 85px !important;
-        max-width: 85px !important;
-        height: auto !important;
-        object-fit: contain !important;
-        transition: width 0.3s ease;
-    }
-    @media (max-width: 991px) {
-        .logo-img {
-            width: 70px !important;
-        }
-    }
-    @media (max-width: 576px) {
-        .logo-img {
-            width: 55px !important;
-        }
     }
     body {
         font-family: 'Poppins', sans-serif;
