@@ -1,5 +1,5 @@
 <div>
-    <nav class="navbar navbar-expand-lg" id="navbar">
+    <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,7 +27,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link d-flex align-items-center gap-2" href="{{ route('organisasi')}}">
+                        <a class="nav-link d-flex align-items-center gap-2" href="{{ route('organisasi') }}">
                             <i class="bi bi-people nav-icon"></i>
                             <span>ORGANISASI</span>
                         </a>
@@ -48,8 +48,10 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="{{ route('zakatinfaq') }}">Zakat & Infaq</a></li>
-                            <li><a class="dropdown-item" href="{{ route('literasikeagamaan') }}">Literasi Keagamaan</a></li>
-                            <li><a class="dropdown-item" href="{{ route('peminjamanfasilitas') }}">Peminjaman Fasilitas</a></li>
+                            <li><a class="dropdown-item" href="{{ route('literasikeagamaan') }}">Literasi Keagamaan</a>
+                            </li>
+                            <li><a class="dropdown-item" href="{{ route('peminjamanfasilitas') }}">Peminjaman
+                                    Fasilitas</a></li>
                         </ul>
                     </li>
 
@@ -61,7 +63,7 @@
                     </li>
 
                     <li class="searchBarMobile">
-                        <x-SearchBar></x-SearchBar>
+                        <x-search-bar></x-search-bar>
                     </li>
                 </ul>
             </div>

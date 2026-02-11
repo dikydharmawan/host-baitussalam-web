@@ -1,4 +1,4 @@
-<x-Layout title="Beranda | Baitussalam">
+<x-layout title="Beranda | Baitussalam">
     <div class="herosectionBeranda d-flex justify-content-center align-items-center">
         <span class="titleHero">Baitussalam Kalirejo Permai
         </span>
@@ -138,31 +138,25 @@
             </p>
 
             <div class="row g-4">
-                @foreach(['idaroh' => 'IDAROH', 'riayah' => 'RI’AYAH', 'imarah' => 'IMARAH'] as $section => $title)
-                @php $img = $galeri[$section] ?? null; @endphp
-                <div class="col-md-4">
-                    <div class="img-card cardGaleri">
-                        @if($img)
-                        <a href="{{ route('galeri.section', $section) }}">
-                            <img
-                                src="{{ asset('storage/' . $img->image_path) }}"
-                                class="img-fluid"
-                                loading="lazy"
-                                alt="{{ $img->caption }}">
-                        </a>
-                        @else
-                        <img
-                            src="assets/images/background2.png"
-                            class="img-fluid"
-                            loading="lazy"
-                            alt="Belum ada foto">
-                        @endif
+                @foreach (['idaroh' => 'IDAROH', 'riayah' => 'RI’AYAH', 'imarah' => 'IMARAH'] as $section => $title)
+                    @php $img = $galeri[$section] ?? null; @endphp
+                    <div class="col-md-4">
+                        <div class="img-card cardGaleri">
+                            @if ($img)
+                                <a href="{{ route('galeri.section', $section) }}">
+                                    <img src="{{ asset('storage/' . $img->image_path) }}" class="img-fluid"
+                                        loading="lazy" alt="{{ $img->caption }}">
+                                </a>
+                            @else
+                                <img src="assets/images/background2.png" class="img-fluid" loading="lazy"
+                                    alt="Belum ada foto">
+                            @endif
+                        </div>
+                        <h6 class="fw-semibold mt-2 text-center">{{ $title }}</h6>
                     </div>
-                    <h6 class="fw-semibold mt-2 text-center">{{ $title }}</h6>
-                </div>
                 @endforeach
             </div>
 
         </div>
     </div>
-</x-Layout>
+</x-layout>
