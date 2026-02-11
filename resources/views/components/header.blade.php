@@ -9,7 +9,9 @@
 
             <div class="Logo py-2">
                 <a class="navbar-brand m-0" href="/">
-                    <img src="{{ asset('assets/images/logobaitussalam.png') }}" class="logo-img" alt="BaitussalamLogo">
+<img src="{{ asset('assets/images/logobaitussalam.png') }}"
+     class="logo-img"
+     style="width: 85px !important; max-width: 85px !important; height: auto !important;" alt="Logo">
                 </a>
             </div>
 
