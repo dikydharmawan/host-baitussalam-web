@@ -657,6 +657,16 @@ button.btnDokumen {
     border: 1px solid #c6e3c6;
 }
 
+.laporanKeuanganContainer .table thead th.logo-img {
+    width: 120px;
+    height: auto;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+}
+
 .laporanKeuanganContainer .table thead th {
     font-weight: 600;
     background-color: #fff;
@@ -846,6 +856,10 @@ button.btnDokumen {
     .searchBarMobile,
     #searchBarDesktop {
         display: none;
+    }
+    .logo-img {
+        width: 80px;
+        height: auto;
     }
     .Logo img {
         width: 80px !important;
@@ -1642,7 +1656,33 @@ button.btnDokumen {
     }
 }
 
+@media (max-width: 991px) {
+    .feature-card {
+        background: #ffffff;
+        border-radius: 20px;
+        padding: 2rem 1.5rem;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        border: 1px solid rgba(0, 0, 0, 0.03);
+        transition: transform 0.3s ease;
+    }
+    .icon-box {
+        width: 65px;
+        height: 65px;
+        background: #f0fdf4;
+        color: #22c55e;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        font-size: 1.8rem;
+    }
+}
+
 @media (max-width: 415px) {
+    .logo-img {
+        width: 60px;
+    }
     .tabsLiterasi {
         width: 100%;
         font-size: 11px;

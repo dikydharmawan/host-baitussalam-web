@@ -5,61 +5,58 @@
     </div>
     <div class="cardKegiatanContainer">
         <div class="container my-5">
-            <div class="row g-4 justify-content-center mt-3">
+            <div class="row g-4 justify-content-center">
 
-                <div class="col-6 col-md-4 col-lg-3">
+                <div class="col-12 col-sm-6 col-lg-3">
                     <div class="feature-card text-center h-100">
                         <a class="text-decoration-none text-dark" href="{{ route('kegiatan') }}">
                             <div class="icon-box">
                                 <i class="bi bi-moon-stars"></i>
                             </div>
-                            <h5 class="fw-semibold mt-3">Kegiatan</h5>
-                            <p class="text-muted small">
+                            <h5 class="fw-semibold mt-3 text-uppercase">Kegiatan</h5>
+                            <p class="text-muted small mb-0">
                                 Agenda & aktivitas masjid
                             </p>
                         </a>
                     </div>
                 </div>
 
-                <div class="col-6 col-md-4 col-lg-3">
+                <div class="col-12 col-sm-6 col-lg-3">
                     <div class="feature-card text-center h-100">
                         <a class="text-decoration-none text-dark" href="{{ route('donasi') }}">
                             <div class="icon-box">
                                 <i class="bi bi-currency-dollar"></i>
                             </div>
-                            <h5 class="fw-semibold mt-3">Donasi</h5>
-                            <p class="text-muted small">
+                            <h5 class="fw-semibold mt-3 text-uppercase">Donasi</h5>
+                            <p class="text-muted small mb-0">
                                 Infaq & sedekah online
                             </p>
                         </a>
                     </div>
                 </div>
 
-            </div>
-            <div class="row g-4 justify-content-center mt-3">
-
-                <div class="col-6 col-md-4 col-lg-3">
+                <div class="col-12 col-sm-6 col-lg-3">
                     <div class="feature-card text-center h-100">
                         <a class="text-decoration-none text-dark" href="{{ route('dokumen') }}">
                             <div class="icon-box">
                                 <i class="bi bi-folder-check"></i>
                             </div>
-                            <h5 class="fw-semibold mt-3">Dokumen</h5>
-                            <p class="text-muted small">
+                            <h5 class="fw-semibold mt-3 text-uppercase">Dokumen</h5>
+                            <p class="text-muted small mb-0">
                                 Laporan keuangan & arsip
                             </p>
                         </a>
                     </div>
                 </div>
 
-                <div class="col-6 col-md-4 col-lg-3">
+                <div class="col-12 col-sm-6 col-lg-3">
                     <div class="feature-card text-center h-100">
                         <a class="text-decoration-none text-dark" href="{{ route('penjadwalan') }}">
                             <div class="icon-box">
                                 <i class="bi bi-calendar-check"></i>
                             </div>
-                            <h5 class="fw-semibold mt-3">Penjadwalan</h5>
-                            <p class="text-muted small">
+                            <h5 class="fw-semibold mt-3 text-uppercase">Penjadwalan</h5>
+                            <p class="text-muted small mb-0">
                                 Waktu shalat & acara
                             </p>
                         </a>
