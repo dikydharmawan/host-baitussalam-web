@@ -822,21 +822,12 @@ button.btnDokumen {
     .searchBarMobile {
         display: none;
     }
-    .navbarTop {
-        display: none;
-    }
     .nav-icon {
         display: none;
     }
-    .navbar1 {
-        display: block;
-        background-color: #c8e6c9;
-        /* Match bg-success-subtle */
-        padding: 5px 0;
-        width: 100%;
-    }
-    .navbar1 .navbar {
-        padding: 0;
+    #navbar {
+        background: transparent !important;
+        border: none;
     }
     .nav-link {
         font-weight: 500;
@@ -860,12 +851,6 @@ button.btnDokumen {
     .navbar-brand img {
         width: 60px;
         height: 48px;
-    }
-    .navbar1 {
-        display: none;
-    }
-    .navbarTop {
-        display: block;
     }
     #navbar .navbar-collapse.show {
         position: fixed;

@@ -1,9 +1,6 @@
 <div class="containerHeader">
     <div class="searchBarHearder bg-success-subtle">
         <div class="headerchild container-fluid d-flex flex-row align-items-center ">
-            <div class="navbarTop">
-                <x-navbar></x-navbar>
-            </div>
             <div class="Logo m-3">
                 <a class="navbar-brand" href="/">
                     <img src="{{ asset('assets/images/logobaitussalam.png') }}" alt="BaitussalamLogo" width="120"
@@ -11,7 +8,8 @@
                 </a>
             </div>
 
-            <div class="ms-auto">
+            <div class="ms-auto d-flex align-items-center gap-3">
+                <x-navbar></x-navbar>
                 <div id="signInContainer">
 
                     @auth
@@ -49,16 +47,6 @@
 
                 </div>
             </div>
-            {{-- <div class="fotoProfileContainer ms-auto">
-                <a href="">
-                    <img class="rounded-circle m-3" src="{{ asset('assets/images/fotoProfile.jpg') }}" alt="fotoProfile" width="50"
-            height="50">
-            </a>
-        </div> --}}
         </div>
     </div>
-    <div class="navbar1">
-        <x-navbar></x-navbar>
-    </div>
-
 </div>
