@@ -658,31 +658,38 @@ button.btnDokumen {
 }
 
 
-/* Robust Logo Sizing */
+/* Extremely Robust Logo Sizing */
 
 .Logo img,
 .logo-img,
-.navbar-brand img {
-    width: 120px !important;
+.navbar-brand img,
+.headerchild .Logo img {
+    width: 150px !important;
+    max-width: 150px !important;
     height: auto !important;
-    max-width: 120px !important;
+    max-height: 100px !important;
+    object-fit: contain !important;
 }
 
 @media (max-width: 991px) {
     .Logo img,
     .logo-img,
-    .navbar-brand img {
-        width: 80px !important;
-        max-width: 80px !important;
+    .navbar-brand img,
+    .headerchild .Logo img {
+        width: 100px !important;
+        max-width: 100px !important;
+        max-height: 70px !important;
     }
 }
 
 @media (max-width: 576px) {
     .Logo img,
     .logo-img,
-    .navbar-brand img {
-        width: 65px !important;
-        max-width: 65px !important;
+    .navbar-brand img,
+    .headerchild .Logo img {
+        width: 80px !important;
+        max-width: 80px !important;
+        max-height: 60px !important;
     }
 }
 
@@ -1328,13 +1335,11 @@ body {
     }
     /* =========================
    FORM
-   KONTAK - MOBILE FIX
-
-.kontakForm {
-    padding: 0;
-}
-
-/* Label */
+   KONTAK - MOBILE FIX */
+    .kontakForm {
+        padding: 0;
+    }
+    /* Label */
     .kontakForm label {
         font-size: 13px;
         font-weight: 500;
@@ -1684,10 +1689,10 @@ body {
     .feature-card {
         background: #ffffff;
         border-radius: 20px;
-        padding: 2.5rem 1.5rem;
-        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04);
+        padding: 1.5rem 1rem;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
         border: 1px solid rgba(0, 0, 0, 0.02);
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
     .icon-box {
         width: 50px;
@@ -1702,12 +1707,6 @@ body {
         font-size: 1.4rem;
     }
     .icon-box-new {
-        width: 70px;
-        height: 70px;
-        background: #f0fdf4;
-        color: #22c55e;
-        border-radius: 50%;
-        display: flex;
         align-items: center;
         justify-content: center;
         margin: 0 auto;

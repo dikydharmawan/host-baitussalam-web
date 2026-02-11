@@ -7,9 +7,10 @@
                 <x-navbar></x-navbar>
             </div>
 
-            <div class="Logo">
+            <div class="Logo" style="max-width: 200px;">
                 <a class="navbar-brand" href="/">
-                    <img src="{{ asset('assets/images/logobaitussalam.png') }}" class="logo-img" alt="BaitussalamLogo">
+                    <img src="{{ asset('assets/images/logobaitussalam.png') }}" class="logo-img" alt="BaitussalamLogo"
+                        style="max-width: 100%; height: auto;">
                 </a>
             </div>
 
