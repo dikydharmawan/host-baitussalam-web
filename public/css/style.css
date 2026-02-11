@@ -1,6 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 * {
-    font-family: poppins, sans-serif;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 
@@ -514,6 +522,70 @@ div.cardBank div button.btnCopyDonasi {
     height: 100%;
 }
 
+
+/* Feature Cards Refinement */
+
+.feature-card {
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 2rem 1.5rem;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04);
+    border: 1px solid rgba(0, 0, 0, 0.02);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 50px rgba(34, 197, 94, 0.1);
+    border-color: rgba(34, 197, 94, 0.2);
+}
+
+.icon-box-new {
+    width: 70px;
+    height: 70px;
+    background: #f0fdf4;
+    color: #22c55e;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover .icon-box-new {
+    background: #22c55e;
+    color: #ffffff;
+    transform: rotate(8deg) scale(1.1);
+}
+
+@media (max-width: 991px) {
+    .feature-card {
+        padding: 1.5rem 1rem;
+        border-radius: 20px;
+    }
+    .icon-box-new {
+        width: 55px;
+        height: 55px;
+        font-size: 1.5rem;
+        border-radius: 16px;
+    }
+    .feature-card h6 {
+        font-size: 0.85rem !important;
+        letter-spacing: 0.5px;
+    }
+}
+
+.extra-small {
+    font-size: 0.75rem;
+    line-height: 1.4;
+}
+
 .doc-icon {
     font-size: 34px;
     color: #000;
@@ -839,10 +911,6 @@ button.btnDokumen {
     }
     .fotoProfileContainer {
         margin-left: auto;
-    }
-    .navbar-brand img {
-        width: 60px;
-        height: 48px;
     }
     .navbar1 {
         display: none;
@@ -1204,9 +1272,6 @@ button.btnDokumen {
    ZAKAT & INFAQ - FIGMA MOBILE
 ========================= */
     /* Background halaman */
-    body {
-        background-color: #e3ebe6;
-    }
     /* Container spacing */
     .container {
         padding: 20px;
@@ -1220,6 +1285,29 @@ button.btnDokumen {
     .container p.text-muted {
         font-size: 12px;
         margin-bottom: 18px;
+    }
+    /* Global Logo Sizing */
+    .logo-img {
+        width: 140px !important;
+        max-width: 140px !important;
+        height: auto !important;
+        object-fit: contain !important;
+        transition: width 0.3s ease;
+    }
+    @media (max-width: 991px) {
+        .logo-img {
+            width: 100px !important;
+        }
+    }
+    @media (max-width: 576px) {
+        .logo-img {
+            width: 80px !important;
+        }
+    }
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #fcfdfc;
+        color: #333;
     }
     /* =========================
    CARD ZAKAT (HIJAU SOFT)
@@ -1301,9 +1389,6 @@ button.btnDokumen {
    KONTAK - FIGMA MOBILE
 
 /* Background halaman */
-    body {
-        background-color: #e3ebe6;
-    }
     /* Container spacing */
     .container {
         padding: 20px;
@@ -1406,9 +1491,6 @@ button.btnDokumen {
    PEMINJAMAN - MOBILE FIX
 
 /* Background section */
-    body {
-        background-color: #dfe8e2;
-    }
     /* Container spacing */
     .container.my-4 {
         padding: 20px;
@@ -1657,18 +1739,52 @@ button.btnDokumen {
     .galeriRemaja .row::-webkit-scrollbar {
         display: none;
     }
-    .galeriRemaja .row {
-        scroll-behavior: smooth;
-    }
+    scroll-behavior: smooth;
 }
 
+
+}
 @media (max-width: 415px) {
     .tabsLiterasi {
         width: 100%;
         font-size: 11px;
     }
+    
     .literasiContainer div.row div.col-md-6 div.card div.card-body a {
         font-size: 10px;
         width: 50%;
     }
+}
+
+/* Global Helpers */
+.transition-all {
+    transition: all 0.3s ease !important;
+}
+.shadow-hover:hover {
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.08) !important;
+}
+.hover-translate:hover {
+    transform: translateY(-5px) !important;
+}
+.hover-scale:hover {
+    transform: scale(1.05) !important;
+}
+.bg-gradient-dark {
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+}
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+/* Gallery Hover Fix */
+.gallery-card-new {
+    transition: all 0.3s ease;
+}
+.gallery-card-new:hover {
+    transform: translateY(-10px);
+}
+.gallery-badge {
+    pointer-events: none;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
 }
