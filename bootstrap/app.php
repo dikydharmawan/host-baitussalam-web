@@ -21,8 +21,10 @@ $app = Application::configure(basePath: dirname(__DIR__))
         //
     })->create();
 
-// 2. Jalankan perintah khusus untuk Vercel
-$app->useStoragePath('/tmp/storage');
+// 2. Jalankan perintah khusus untuk Vercel (Hanya jika di lingkungan Vercel)
+if (isset($_ENV['VERCEL']) || isset($_SERVER['VERCEL'])) {
+    $app->useStoragePath('/tmp/storage');
+}
 $app->bind('path.public', function() {
     return base_path('public');
 });
