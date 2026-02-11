@@ -1,5 +1,5 @@
 <?php
-// Mengarahkan ke file autoload dan app di folder root
+// Mengarahkan ke vendor dan bootstrap yang ada di root
 require __DIR__ . '/../vendor/autoload.php';
 $app = require_once __DIR__ . '/../bootstrap/app.php';
 
