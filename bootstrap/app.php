@@ -21,6 +21,11 @@ $app = Application::configure(basePath: dirname(__DIR__))
         //
     })->create();
 
+// Manually register core providers that are failing to autoload on Vercel
+$app->register(\Illuminate\Filesystem\FilesystemServiceProvider::class);
+$app->register(\Illuminate\Events\EventServiceProvider::class);
+$app->register(\Illuminate\View\ViewServiceProvider::class);
+
 // 2. Jalankan perintah khusus untuk Vercel (Hanya jika di lingkungan Vercel)
 if (isset($_ENV['VERCEL']) || isset($_SERVER['VERCEL'])) {
     $app->useStoragePath('/tmp/storage');
