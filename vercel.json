@@ -7,7 +7,7 @@
         }
     },
     "routes": [
-        { "src": "/(build|css|js|images|storage|favicon.ico)/(.*)", "dest": "/public/$1/$2" },
+        { "src": "/(build|css|js|images|assets|storage|favicon.ico)/(.*)", "dest": "/public/$1/$2" },
         { "src": "/(.*)", "dest": "/api/vercel_index.php" }
     ],
     "env": {
