@@ -8,46 +8,45 @@
                 </a>
             </div>
 
-            <div class="ms-auto d-flex align-items-center gap-3">
-                <nav class="navbar navbar-expand-lg navbar-light p-0">
-                    <x-navbar></x-navbar>
-                </nav>
-                <div id="signInContainer">
+            <div class="flex-grow-1 d-flex justify-content-center">
+                <x-navbar></x-navbar>
+            </div>
 
-                    @auth
-                        {{-- Kalau sudah login --}}
-                        <div class="dropdown">
-                            <button class="btn btn-signin d-flex align-items-center gap-2 dropdown-toggle" type="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="bi bi-person-circle"></i>
-                                <span class="fw-semibold">
-                                    {{ Auth::user()->name }}
-                                </span>
-                            </button>
+            <div id="signInContainer">
 
-                            <ul class="dropdown-menu dropdown-menu-end">
-                                <li>
-                                    <form method="POST" action="{{ route('logout') }}">
-                                        @csrf
-                                        <button type="submit" class="dropdown-item text-danger">
-                                            <i class="bi bi-box-arrow-right me-2"></i> Logout
-                                        </button>
-                                    </form>
-                                </li>
-                            </ul>
-                        </div>
-                    @else
-                        {{-- Kalau belum login --}}
-                        <button class="btn btn-signin d-flex align-items-center gap-2" data-bs-toggle="modal"
-                            data-bs-target="#signin">
-                            <span class="fw-semibold">SIGN IN</span>
-                            <span class="icon-circle">
-                                <i class="bi bi-arrow-right"></i>
+                @auth
+                    {{-- Kalau sudah login --}}
+                    <div class="dropdown">
+                        <button class="btn btn-signin d-flex align-items-center gap-2 dropdown-toggle" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-person-circle"></i>
+                            <span class="fw-semibold">
+                                {{ Auth::user()->name }}
                             </span>
                         </button>
-                    @endauth
 
-                </div>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li>
+                                <form method="POST" action="{{ route('logout') }}">
+                                    @csrf
+                                    <button type="submit" class="dropdown-item text-danger">
+                                        <i class="bi bi-box-arrow-right me-2"></i> Logout
+                                    </button>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                @else
+                    {{-- Kalau belum login --}}
+                    <button class="btn btn-signin d-flex align-items-center gap-2" data-bs-toggle="modal"
+                        data-bs-target="#signin">
+                        <span class="fw-semibold">SIGN IN</span>
+                        <span class="icon-circle">
+                            <i class="bi bi-arrow-right"></i>
+                        </span>
+                    </button>
+                @endauth
+
             </div>
         </div>
     </div>
