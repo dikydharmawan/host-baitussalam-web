@@ -830,6 +830,9 @@ button.btnDokumen {
         background: transparent !important;
         border: none;
     }
+    #navbarNavDropdown .navbar-nav {
+        flex-direction: row !important;
+    }
     .nav-link {
         font-weight: 500;
         color: #1b5e20 !important;
