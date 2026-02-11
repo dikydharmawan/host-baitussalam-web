@@ -4,11 +4,11 @@
             <div class="navbarTop">
                 <x-Navbar></x-Navbar>
             </div>
-            <div class="Logo m-3">
-                <a class="navbar-brand" href="/">
-                    <img src="{{ asset('assets/images/logobaitussalam.png') }}" alt="BaitussalamLogo">
-                </a>
-            </div>
+           <div class="Logo d-flex align-items-center">
+    <a class="navbar-brand" href="/">
+        <img src="{{ asset('assets/images/logobaitussalam.png') }}" class="logo-img" alt="Logo">
+    </a>
+</div>
 
             <div class="ms-auto">
                 <div id="signInContainer">
