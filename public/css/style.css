@@ -1288,20 +1288,20 @@ button.btnDokumen {
     }
     /* Global Logo Sizing */
     .logo-img {
-        width: 140px !important;
-        max-width: 140px !important;
+        width: 85px !important;
+        max-width: 85px !important;
         height: auto !important;
         object-fit: contain !important;
         transition: width 0.3s ease;
     }
     @media (max-width: 991px) {
         .logo-img {
-            width: 100px !important;
+            width: 70px !important;
         }
     }
     @media (max-width: 576px) {
         .logo-img {
-            width: 80px !important;
+            width: 55px !important;
         }
     }
     body {
