@@ -11,6 +11,8 @@
         "APP_ENV": "production",
         "APP_DEBUG": "true",
         "VIEW_COMPILED_PATH": "/tmp",
-        "SESSION_DRIVER": "cookie"
+        "SESSION_DRIVER": "cookie",
+        "LOG_CHANNEL": "stderr",
+        "APP_KEY": "base64:edwg86EP0AF/tiTOnoHjA/6VVezDZRxOBqJlO+LXigU="
     }
 }
