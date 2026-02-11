@@ -812,7 +812,8 @@ button.btnDokumen {
 
 @media (min-width: 992px) {
     #navbarNavDropdown {
-        display: flex;
+        display: flex !important;
+        visibility: visible !important;
         justify-content: center;
         align-items: center;
     }
