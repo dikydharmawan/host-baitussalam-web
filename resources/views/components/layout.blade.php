@@ -36,13 +36,13 @@
 <body>
 
     {{-- header --}}
-    <x-Header></x-Header>
+    <x-header></x-header>
     {{-- Konten halaman --}}
     <main>
         {{ $slot }}
     </main>
 
-    <x-Footer></x-Footer>
+    <x-footer></x-footer>
     @include('auth.login')
 
 
