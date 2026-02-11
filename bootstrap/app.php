@@ -29,6 +29,9 @@ $app->register(\Illuminate\View\ViewServiceProvider::class);
 // 2. Jalankan perintah khusus untuk Vercel (Hanya jika di lingkungan Vercel)
 if (isset($_ENV['VERCEL']) || isset($_SERVER['VERCEL'])) {
     $app->useStoragePath('/tmp/storage');
+    // Ensure cache paths are writable
+    $_ENV['APP_PACKAGES_CACHE'] = '/tmp/packages.php';
+    $_ENV['APP_SERVICES_CACHE'] = '/tmp/services.php';
 }
 $app->bind('path.public', function() {
     return base_path('public');
