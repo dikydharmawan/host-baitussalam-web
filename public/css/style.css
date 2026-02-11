@@ -1739,50 +1739,60 @@ button.btnDokumen {
     .galeriRemaja .row::-webkit-scrollbar {
         display: none;
     }
-    scroll-behavior: smooth;
+    .galeriRemaja .row {
+        scroll-behavior: smooth;
+    }
 }
 
-
-}
 @media (max-width: 415px) {
     .tabsLiterasi {
         width: 100%;
         font-size: 11px;
     }
-    
     .literasiContainer div.row div.col-md-6 div.card div.card-body a {
         font-size: 10px;
         width: 50%;
     }
 }
 
+
 /* Global Helpers */
+
 .transition-all {
     transition: all 0.3s ease !important;
 }
+
 .shadow-hover:hover {
     box-shadow: 0 15px 45px rgba(0, 0, 0, 0.08) !important;
 }
+
 .hover-translate:hover {
     transform: translateY(-5px) !important;
 }
+
 .hover-scale:hover {
     transform: scale(1.05) !important;
 }
+
 .bg-gradient-dark {
     background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
 }
+
 .bg-light {
     background-color: #f8f9fa !important;
 }
 
+
 /* Gallery Hover Fix */
+
 .gallery-card-new {
     transition: all 0.3s ease;
 }
+
 .gallery-card-new:hover {
     transform: translateY(-10px);
 }
+
 .gallery-badge {
     pointer-events: none;
     font-size: 0.9rem;

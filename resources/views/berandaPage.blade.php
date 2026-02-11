@@ -87,7 +87,7 @@
                         @foreach (['Sukses dalam Mengisi malam Lailatul Qadar', 'Tafsir Surah Ar-Rahman', 'Tafsir Surah Al-Mulk', 'Pentingnya menjaga Ukhuwah Islamiyah'] as $item)
                             <div
                                 class="d-flex align-items-center gap-4 bg-white p-3 rounded-4 shadow-sm hover-translate shadow-hover transition-all">
-                                <div class="flex-shrink-0">
+                                <div class="shrink-0">
                                     <img src="{{ asset('assets/images/gambarMasjid.png') }}" class="rounded-3 shadow-sm"
                                         width="100" height="75" style="object-fit: cover;">
                                 </div>
