@@ -657,20 +657,32 @@ button.btnDokumen {
     border: 1px solid #c6e3c6;
 }
 
-.logo-img {
-    width: 100px;
-    height: auto;
+
+/* Robust Logo Sizing */
+
+.Logo img,
+.logo-img,
+.navbar-brand img {
+    width: 120px !important;
+    height: auto !important;
+    max-width: 120px !important;
 }
 
 @media (max-width: 991px) {
-    .logo-img {
-        width: 80px;
+    .Logo img,
+    .logo-img,
+    .navbar-brand img {
+        width: 80px !important;
+        max-width: 80px !important;
     }
 }
 
-@media (max-width: 415px) {
-    .logo-img {
-        width: 60px;
+@media (max-width: 576px) {
+    .Logo img,
+    .logo-img,
+    .navbar-brand img {
+        width: 65px !important;
+        max-width: 65px !important;
     }
 }
 
@@ -1671,10 +1683,11 @@ body {
 @media (max-width: 991px) {
     .feature-card {
         background: #ffffff;
-        border-radius: 16px;
-        padding: 1.2rem 1rem;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-        border: 1px solid rgba(0, 0, 0, 0.03);
+        border-radius: 20px;
+        padding: 2.5rem 1.5rem;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04);
+        border: 1px solid rgba(0, 0, 0, 0.02);
+        margin-bottom: 10px;
     }
     .icon-box {
         width: 50px;
@@ -1688,9 +1701,41 @@ body {
         margin: 0 auto;
         font-size: 1.4rem;
     }
+    .icon-box-new {
+        width: 70px;
+        height: 70px;
+        background: #f0fdf4;
+        color: #22c55e;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        font-size: 2rem;
+    }
     .extra-small {
         font-size: 0.7rem !important;
     }
+}
+
+.icon-box-new {
+    width: 80px;
+    height: 80px;
+    background: #f0fdf4;
+    color: #22c55e;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 2.2rem;
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover .icon-box-new {
+    background: #22c55e;
+    color: #ffffff;
+    transform: scale(1.1);
 }
 
 @media (max-width: 415px) {
