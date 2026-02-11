@@ -9,8 +9,9 @@
             </div>
 
             <div class="ms-auto d-flex align-items-center gap-3">
-                <span style="color: red; font-weight: bold; font-size: 24px;">TEST VISIBILITY</span>
-                <x-navbar></x-navbar>
+                <nav class="navbar navbar-expand-lg navbar-light p-0">
+                    <x-navbar></x-navbar>
+                </nav>
                 <div id="signInContainer">
 
                     @auth
