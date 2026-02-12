@@ -1,68 +1,67 @@
 <div class="containerHeader">
     <div class="searchBarHearder bg-success-subtle">
-        <div class="headerchild container-fluid d-flex flex-row align-items-center py-2 px-lg-5">
-            
-            {{-- Hamburger menu for mobile (Left) --}}
-            <div class="d-lg-none me-2">
-                <x-navbar></x-navbar>
+        <div class="headerchild container-fluid d-flex flex-row align-items-center ">
+            <div class="navbarTop">
+                <x-Navbar></x-Navbar>
             </div>
-
-            <div class="Logo">
-                <a class="navbar-brand m-0" href="/">
-                    <img src="{{ asset('assets/images/logobaitussalam.png') }}" alt="Logo Baitussalam" class="logo-img"
-    style="width: 60px !important; max-width: 60px !important; height: auto !important;">
+            <div class="Logo m-3">
+                <a class="navbar-brand" href="/">
+                    <img src="{{ asset('assets/images/logobaitussalam.png') }}" alt="BaitussalamLogo" width="120" height="96">
                 </a>
             </div>
 
-            {{-- Desktop Navbar (Center) --}}
-            <div class="d-none d-lg-flex grow justify-content-center">
-                <x-navbar></x-navbar>
-            </div>
+            <div class="ms-auto">
+                <div id="signInContainer">
 
-            <div id="signInContainer" class="ms-auto d-flex align-items-center">
-                @auth
+                    @auth
                     {{-- Kalau sudah login --}}
                     <div class="dropdown">
-                        <button class="btn btn-signin d-flex align-items-center gap-2 dropdown-toggle" type="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="bi bi-person-circle fs-5"></i>
-                            <span class="fw-semibold d-none d-sm-inline">
+                        <button class="btn btn-signin d-flex align-items-center gap-2 dropdown-toggle"
+                            type="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="bi bi-person-circle"></i>
+                            <span class="fw-semibold">
                                 {{ Auth::user()->name }}
                             </span>
                         </button>
 
-                        <ul class="dropdown-menu dropdown-menu-end shadow-sm border-0">
+                        <ul class="dropdown-menu dropdown-menu-end">
                             <li>
                                 <form method="POST" action="{{ route('logout') }}">
                                     @csrf
-                                    <button type="submit" class="dropdown-item text-danger d-flex align-items-center gap-2">
-                                        <i class="bi bi-box-arrow-right"></i> Logout
+                                    <button type="submit" class="dropdown-item text-danger">
+                                        <i class="bi bi-box-arrow-right me-2"></i> Logout
                                     </button>
                                 </form>
                             </li>
                         </ul>
                     </div>
-                @else
+
+                    @else
                     {{-- Kalau belum login --}}
-                    <button class="btn btn-signin d-flex align-items-center" data-bs-toggle="modal"
+                    <button class="btn btn-signin d-flex align-items-center gap-2"
+                        data-bs-toggle="modal"
                         data-bs-target="#signin">
-                        <span class="fw-bold small text-uppercase" style="font-size: 12px;">SIGN IN</span>
-                        <div class="icon-circle">
+                        <span class="fw-semibold">SIGN IN</span>
+                        <span class="icon-circle">
                             <i class="bi bi-arrow-right"></i>
-                        </div>
+                        </span>
                     </button>
-                @endauth
+                    @endauth
+
+                </div>
             </div>
-        </div>
-    </div>
-</div>            {{-- <div class="fotoProfileContainer ms-auto">
+            {{-- <div class="fotoProfileContainer ms-auto">
                 <a href="">
                     <img class="rounded-circle m-3" src="{{ asset('assets/images/fotoProfile.jpg') }}" alt="fotoProfile" width="50"
             height="50">
             </a>
+        </div> --}}
     </div>
-    <div class="navbar1">
-        <x-Navbar></x-Navbar>
-    </div>
+</div>
+<div class="navbar1">
+    <x-Navbar></x-Navbar>
+</div>
 
 </div>
